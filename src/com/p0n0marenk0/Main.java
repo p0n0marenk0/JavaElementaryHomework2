@@ -2,11 +2,11 @@
 //например: «I like walking in the park» ,«in».
 //Создайте следующий интерфейс
 //public interface StringWorker {
-//int execute(String sentence, String word);
+//int execute(String sentences, String word);
 //}
 //Будет 3 класса которые реализуют следующий функционал :
 //Вы должны вернуть индекс числа где оно встречается. позицию первой встречи слова
-//Вы должны посчитать количество повторений
+//Вы должны посчитать количество повторений+
 //Вы должны вернуть кол-во символов в предложение, если удалить все такие слова.
 
 //2. Вывести это в файл/ либо в консоль в зависимости от того что решил пользователь
@@ -32,6 +32,10 @@ package com.p0n0marenk0;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+        String str = "I like walking in the park";
+        String str1 = "in";
+	CountAmountOfItarance Amount = new CountAmountOfItarance();
+	int amount = Amount.execute(str,str1);
+        System.out.println(amount);
     }
 }

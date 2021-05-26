@@ -1,4 +1,8 @@
 package com.p0n0marenk0;
 
-public class GetIndexOfNumber {
+public class GetIndexOfNumber implements StringWorker {
+    @Override
+    public int execute(String sentence, String word1) {
+        return 0;
+    }
 }
